@@ -46,8 +46,7 @@ class CreditInput(BaseModel):
     PAY_AMT5: float
     PAY_AMT6: float
 
-
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def home():
     return {"message": "Credit Risk API is running 🚀"}
 
